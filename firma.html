@@ -1,0 +1,49 @@
+<table style="font-family: arial; height:90px; border-collapse: collapse; border: ">
+    <tr>
+        <td style="padding: 5px">
+            <img src="https://scontent.fpbc1-1.fna.fbcdn.net/v/t1.0-1/p160x160/19656965_700023260184024_3020903980275041267_n.jpg?oh=681e121a138eccd9202b4b25ab709f83&oe=5A347990" alt=""
+                 width="90" height="90"
+                 style="display:block; border-radius: 50%; margin-right: 3px; float: left"
+            >
+            <td style="vertical-align:top; padding:5px 5px 5px 10px; border-left: 3px solid #3B515E">
+                <strong style="margin: 0; font-size:17px; color: rgba(40, 45, 49,.9); line-height: 24px; height: 24px; display:block">Erwin Alan Fr&iacute;as Mart&iacute;nez</strong>
+                <p style='font-size:12px; margin: 0px 0 6px; height: 30px'>
+                    <span style="margin: 0; color: #666">Front-End Developer</span><br>
+                    <span style="margin: 0; color: #666">Tel. +52 1 238 152 1477</span><br>
+                    <a href='http://www.erwcode.com' target="_blanck" style="color: #122140; text-decoration: none; font-weight: bold">erwcode.com</a>
+                </p>
+                <div id="sociales" style="margin-top:20px"></div>
+            </td>
+        </td>
+      </tr>
+</table>
+
+<script type="text/javascript">
+
+    let socials = {
+        facebook: {
+            url: 'https://www.facebook.com/erwin.alan.frias.mtz',
+            icon: 'https://ed.team/sites/default/files/social-icons/facebook-icon.png'
+        } ,
+        twitter: {
+            url: 'https://twitter.com/ErwinFriasMtz',
+            icon: 'https://ed.team/sites/default/files/social-icons/twitter-icon.png'
+        },
+        linkedin: {
+            url: 'https://mx.linkedin.com/in/erwin-alan-fr%C3%ADas-mart%C3%ADnez-bb652698',
+            icon: 'https://ed.team/sites/default/files/social-icons/linkedin-icon.png'
+        },
+        github: {
+            url: 'https://github.com/ErwinFriasMtz',
+            icon: 'https://ed.team/sites/default/files/social-icons/github-icon.png'
+        }
+}
+
+let socialIcons = '';
+    for(let social in socials) {
+        socialIcons += `<a href="${socials[social].url}" style="display:inline-block;margin-right:6px" target="_blanck"><img src="${socials[social].icon}" width="20" style="display: block"></a>`
+    }
+
+document.getElementById('sociales').innerHTML = socialIcons;
+
+</script>
